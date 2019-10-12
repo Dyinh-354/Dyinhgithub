@@ -1,0 +1,192 @@
+* {
+	padding: 0;
+	margin: 0;
+
+}
+ul ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/*版心设置*/
+.inner {
+	width: 980px;
+	margin: 0 auto;
+}
+.header {
+	width: 100%;
+	height: 197px;
+	background-color: #080808;
+}
+
+.header .inner .logo {
+	float: left;
+	width: 362px;
+	height: 72px;
+	padding: 34px 0 0 35px;
+}
+.header .logo a {
+	display: block;
+	width: 266px;
+	height: 47px;
+	background-image: url(../images/logo.png);
+	text-indent: -888em;
+	overflow: hidden;
+}
+
+
+.header .inner .nav {
+	float: right;
+	padding: 25px 0;
+}
+.header .inner .nav ul {
+	display: flex;
+}
+.header .inner .nav ul li {
+	padding: 20px 26px;
+	border-right: 1px solid #838383;
+	
+	font-size: 16px;
+	font-weight: 550;
+}
+.header .inner .nav ul li a {
+	color: #fff;
+}
+.content {	
+	background: url(../images/content-bg.jpg) no-repeat center top;
+	background-size: cover;
+	padding: 30px 0;
+	height: 490px;
+}
+
+.content .inner .carousel {
+	width: 980px;
+	height: 490px;
+	background-image: url(../images/slider-bg.png);
+	position: relative;
+	margin: -120px auto;
+}
+.content .inner .carousel .circles {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.content .inner .carousel .circles ol li {
+	width: 100px;
+	height: 70px;
+	margin-bottom: 1px;
+}
+
+
+.content .carousel .circles ol li a {
+	display: block;
+	width: 100px;
+	height: 70px;
+	background: url(../images/pagination-a.png) no-repeat 0 -70px;
+	padding: 10px 0 0 10px;
+}
+.content .carousel .circles ol li .cur {
+	display: block;
+	background: url(../images/pagination-a.png) no-repeat 0 0; 
+}
+.content .carousel .circles ol li a span {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/pagin-1.png);
+	/*设置字体样式*/
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff;
+
+}
+.content .carousel .circles ol li:nth-child(2) a span {
+	background-image: url(../images/pagin-2.png);
+}
+.content .carousel .circles ol li:nth-child(3) a span {
+	background-image: url(../images/pagin-3.png);
+}
+.content .carousel .circles ol li:nth-child(4) a span {
+	background-image: url(../images/pagin-4.png);
+}
+/*给第一个设置默认背景颜色(这里是使用小图标覆盖)，以及鼠标悬停样式*/
+
+.content .carousel .circles ol li a:hover {
+	background: url(../images/pagination-a.png) no-repeat 0 0; 
+}
+
+.content .inner .carousel .imgs {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.content .inner .carousel .imgs ul {
+	width: 830px;
+	height: 431px;
+	position: relative;
+}
+.content .inner .carousel .imgs ul li {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.content .carousel .imgs ul li.active {
+	z-index: 10;
+}
+.content .carousel .imgs .mask {
+	position: absolute;
+	width: 300px;
+	height: 362px;
+	background-image: url(../images/banner-bg.png);
+	right: 0;
+	top: 0;
+	color: #fff;
+	text-align: center;
+	padding-top: 69px;
+}
+/*设置mask内部的样式*/
+/*设置x小图标的定位*/
+.content .carousel .imgs .mask .close {
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background-image: url(../images/close.gif);
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+.content .carousel .imgs .mask h3 {
+	line-height: 53px;
+	font-size: 37px;
+	font-weight: bold;
+}
+.content .carousel .imgs .mask h4 {
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 23px;
+}
+.content .carousel .imgs .mask .txt {
+	font-size: 12px;
+	line-height: 26px;
+	margin-bottom: 36px;
+}
+.content .carousel .imgs .mask .more {
+	display: block;
+	width: 120px;
+	height: 40px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.content .carousel .imgs .mask .more:hover {
+	background-color: #000;
+	color: #fff;
+}
+
